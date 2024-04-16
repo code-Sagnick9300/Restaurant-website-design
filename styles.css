@@ -1,0 +1,394 @@
+html{
+    scroll-behavior: smooth;
+}
+
+.loader_bg{
+    position: fixed;
+    z-index: 9999999;
+    background: #fff;
+    width: 100%;
+    height: 100%;
+}
+
+::after,::before{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: "Quantico", sans-serif;
+}
+
+
+
+::-webkit-scrollbar{
+    width: 12px;
+    color: rgb(112, 108, 108);
+}
+
+::-webkit-scrollbar-track{
+    background-color: #f1f1f1;
+}
+
+.max-width{
+    
+}
+body{
+    background: white;
+    color: var(--clr-seconadary);
+    overflow-x: hidden;
+}
+
+body{
+    
+}
+.Home{
+    display: flex;
+    background: url(img/pngtree-tables-set-at-a-restaurant-image_13032060.jpg);
+    height: 1100px;
+    /* width: ; */
+    color: #fff;
+    /* min-height: 260px;
+    max-height: 300px; */
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: "Ubuntu", sans-serif;
+    align-items: center !important;
+    border: 8px solid;
+    border-radius: 35px;
+}
+
+.meals{
+    height: 700px;
+}
+
+.meals .txt h1{
+    display: flex;
+    justify-content: center;
+    padding-top: 30px;
+    font-family: "RocknRoll One", sans-serif;
+    font-weight: 400;
+    font-size: 35px;
+    background-color: linear-gradient(120deg(#8596bb,#db68aff5,#6cc4a9));
+}
+
+
+.meal {
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-radius: 11px;
+    overflow: hidden;
+    transition: all 0.4s;
+}
+
+.meal:hover {
+    transform: translateY(-1.2rem);
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.meal-content {
+    padding: 24px;
+}
+
+.meal-tags {
+    margin-bottom: 1.2rem;
+    display: flex;
+    gap: 0.4rem;
+}
+
+.tag {
+    display: inline-block;
+    padding: 0.4rem 0.8rem;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    background-color: #51cf66;
+    color: #333;
+    border-radius: 100px;
+    font-weight: 600;
+}
+
+.tag--vegetarian {
+    background-color: #51cf66;
+}
+
+.tag--vegan {
+    background-color: #94d82d;
+}
+
+.tag--paleo {
+    background-color: #ffd43b;
+}
+
+.meal-title {
+    font-size: 20px;
+    color: #333;
+    font-family: "Audiowide", sans-serif;
+    font-weight: 400;
+    margin-bottom: 1.2rem;
+}
+
+.meal-attributes {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.meal-attribute {
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    gap: 1.6rem;
+}
+
+.meal-icon {
+    height: 2.4rem;
+    width: 2.4rem;
+    color: #e67e22;
+}
+
+.meal img {
+    width: 300px;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: row;
+    height: 224.15px;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+
+.container-menu {
+    padding: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 56px;
+    flex-direction: column;
+}
+
+.primary{
+    font-size: 64px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    font-family: "Anta", sans-serif;
+}
+
+.secondary{
+    font-size: 44px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.tertiary{
+    font-size: 26px;
+    font-weight: 400;
+    margin-bottom: 20px;
+    font-family: "Akaya Telivigala", system-ui;
+
+}
+
+.btn{
+    padding: 14px 20px;
+    background: #e51f89;
+    border-radius: 4px;
+    color: #fff;
+    text-decoration: none;
+    font-size: 22px;
+    display: inline-block;
+    margin: 20px;
+    transition:all 0.7s ease-in-out;
+}
+
+.btn:hover{
+    transform: rotate(8deg);
+}
+/*Navigation area*/
+label.logo {
+    font-size: 35px;
+    line-height: 80px;
+    padding: 0 30px;
+    font-weight: 700;
+}
+
+/* nav {
+    padding: 0 33px;
+    height: 80px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    background: white;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    z-index: 22;
+} */
+
+.navbar .menu-btn{
+    border: 5px solid #dbb672;
+
+    padding: 22px 18px;
+    margin-left: 10px;
+
+}
+.navbar.menu-btn li{
+    list-style: none;
+    display: inline-block;
+    color: #333;
+    margin: 0 30px;
+}
+.navbar ul>li{
+    display: inline-block;
+    color: linear-gradient(rgb(138, 190, 207),rgb(69, 201, 113),rgb(180, 148, 61));
+    font-size: 18px;
+    text-decoration: none;
+    /* padding: 12px; */
+    border: 4px solid rgb(34, 63, 156);
+    margin: 16px 8px;
+}
+
+.menu a:active,
+.menu a:hover{
+    border-bottom: 2px solid var(--clr-primary);
+    transition: 0.3s;
+}
+
+.checkbtn{
+    font-size: 30px;
+    color: #fff;
+    float:right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+#check{
+    display: none;
+}
+
+/*Home section*/
+.home{
+    background: whitesmoke;
+    padding: 132px 33px;
+    display: flex;
+    justify-content:center;
+    align-items: center !important;
+
+}
+.text,
+.visual{
+    width: 50%;
+}
+
+.text{
+    margin: 0 20px;
+}
+
+.visual img{
+    display: block;
+    border-radius: 50%;
+    height: 380px;
+    width: 380px;
+    margin: auto;
+    margin-left: 550px;
+}
+.home .text{
+    margin-left: 30px;
+} 
+
+.home .visual img{
+    margin-left: auto;
+    box-shadow: rgb(138, 190, 207);
+    
+}
+
+.title{
+    
+    text-align: center;
+    font-size: 40px;
+    border: 4px solid #b38ebd;
+    color: linear-gradient(45deg,#97aedf,#beb7ff,#259377);
+    /* background-color:  */
+    animation: cursor 1s infinite step-start,typing 12s infinite steps(32);
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+
+@keyframes cursor{
+    0%,100%{border-color: transparent;}
+    49.5%{border-color: #3ab18d;
+    border-radius: 8px ;}
+}
+@keyframes typing{
+    0%{width: 0ch;}/*Test is hidden*/
+    30%{width: 16ch;}/*the entire text is typed out*/
+    80%{width: 32ch;}/**/
+    90%{width: 1ch;}/*/*Text is deleted*/
+    100%{width: 0ch;}/*text stays hidden*/
+}
+
+
+/* How it works */
+#how-it-works{
+    margin: 0 auto;
+    text-align: center;
+    background-color: whitesmoke;
+}
+.box{
+    background: white;
+    box-shadow: rgb(100, 100, 111,0.2) 0px 7px 29px 0px;
+    padding: 25px 5px;
+    margin: 0 10px;
+    border-radius: 8px;
+    font-size: 18px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.box ion-icon{
+    font-size: 35px;
+    margin: 15px 0;
+}
+
+.box:hover{
+    transform: rotate(5deg);
+}
+
+/* End of How it works */
+
+/* Restaurant Menu */
+#menu{
+    background-color: whitesmoke;
+}
+
+.category {
+    list-style: none;
+    text-align: center;
+    margin: 20px 0 40px 0;
+}
+
+.category li{
+    display: inline-block;
+    margin: 0 15px;
+    font-size: 20px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.category li.active {
+    color: deeppink;
+}
+
+.restaurant-menu{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 6 px;
+    row-gap: 40px;
+}
+
+.menu-item{
+    width: 600px;
+    margin: 0 auto;
+    border-radius: 6px;
+    overflow: hidden;
+    background-color: white;
+    box-shadow: rgb(0, 0, 0,0.24)0px 3px 3px;
+    padding: 20px;
+}
